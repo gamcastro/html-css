@@ -23,10 +23,18 @@
         th,td {
             border: 1px solid black ;
             padding: 8px;
+        }    
+
+        col.cnome {
+            background-color: chartreuse;
         }
 
-        .destaque {
-            background-color: chartreuse;
+        col.csexo {
+            background-color: yellow;
+        }
+
+        col.cgrupo {
+            background-color: red;
         }
     </style>
 </head>
@@ -35,10 +43,9 @@
     <table>
 
         <colgroup>
-            <col>
-            <col>
-            <col>
-            <col>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+            <col class="cprofissao">
         </colgroup>
         <caption>Cadastro</caption>
         <tr>
