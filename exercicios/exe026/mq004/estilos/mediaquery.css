@@ -2,3 +2,96 @@
 
 /* Todas as demais midias */
 
+@media print {/* Impressão */
+    body {
+        background-image: url('../imagens/back-print.jpg');
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: block;
+    }
+    
+    img#computador {
+        display: none;
+    }
+    
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 762px) and (max-width: 992px) {/*Tablets */
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: block;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#computador {
+        display: none;
+    }
+    
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){/*Desktops */
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#computador {
+        display: block;
+    }
+    
+    img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {/* Grandes Telas */
+
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+}
+
+main h1 {
+    text-shadow: none;
+    color: black;
+}
+
